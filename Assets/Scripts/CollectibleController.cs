@@ -7,7 +7,8 @@ public class CollectibleController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+     // Finds the Game Manager in the Scene
+    gameManager = FindAnyObjectByType<GameManager>();   
     }
 
     // Update is called once per frame
@@ -29,7 +30,10 @@ public class CollectibleController : MonoBehaviour
 
             // Safely destroy the collectible immediately
             Destroy(gameObject);
+            gameManager.UpdateRemaining();
         }
     }
+    private GameManager gameManager;
+    
 
 }
