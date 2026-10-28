@@ -30,8 +30,8 @@ public class PlayerController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-       force = 30.25f;
-       jumpForce = 55.8f;
+       force = 100.25f;
+       jumpForce = 100.8f;
 
        // Initialize available jumps to max jumps
        jumpsRemaining = maxJumps;
